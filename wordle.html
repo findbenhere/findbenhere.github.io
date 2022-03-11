@@ -7,11 +7,48 @@
     <title>Wordle Helper</title>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index.3b3c7ce7.js"></script>
-    <link rel="stylesheet" href="/assets/index.06f2cd34.css">
+    <script type="module" crossorigin src="/assets/index.f6d02892.js"></script>
+    <link rel="stylesheet" href="/assets/index.c25b5bfc.css">
   </head>
   <body>
 
+    <div class="dialog-box" id="helpbox">
+      <div class="dialog-content">
+        <div class="dialog-header">
+          <h2>How to use:</h2>
+          <button id="close-btn" class="close">X</button>
+        </div>
+        <div class="dialog-body">
+          <p>
+            This tool will show the words remaining after each Wordle guess. You
+            enter the letters of your guess using then keyboard. You then click
+            on each letter to change to the color to yellow, green or grey. Each
+            time you click a letter it will cycle to the next color. After the
+            colors and letters match your Wordle guess, click
+            <strong>Guess</strong> to reduce the word list. Repeat to continue
+            to reduce the possible words remaining.
+          </p>
+          <p>Click <strong>Reset</strong> to start over.</p>
+          <hr />
+          <p>
+            This was designed to assist with sites such as
+            <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>
+            or <a href="https://www.wordleunlimited.com/">Wordle Unlimited</a>.
+          </p>
+          <p>
+            The 15,918 words in this list were randomly found on the Internet
+            and contains significantly more words than the official Wordle list
+            or the Scrabble dictionary.
+          </p>
+          <p>
+            This was loving created to scratch my own itch by
+            <a href="https://findbenhere.com/">Benjamin Messick</a>. I use it
+            after I have finished the day's Wordle to see how each of my guesses
+            reduced the word list.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <header>
       <h1>Wordle Helper</h1>
@@ -22,6 +59,7 @@
 
     </div>
     <div>
+        <button id="help-btn" class="button">Help</button>
         <button id="guess-btn" class="button">Guess</button>
         <button id="reset-btn" class="button">Reset</button>
     </div>
